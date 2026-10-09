@@ -1,0 +1,1783 @@
+[
+    {
+        "id": "3a4a812410f69129",
+        "type": "tab",
+        "label": "Registro",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a65381bd9f42e5c8",
+        "type": "tab",
+        "label": "Practica 1 - Control de reles",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "38125250a1f6d5d9",
+        "type": "tab",
+        "label": "Practica 2 - Monitoreo ambiental",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "17571a22895ada9e",
+        "type": "tab",
+        "label": "Practica 3 - Servomotor/valvula ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "929728b8d9d20449",
+        "type": "tab",
+        "label": "Practica 4 - Sistema de alarma",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8c52c4055d2a4440",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "91863822a5cbdc8b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#8cbdc0",
+                "baseFont": "Impact,Impact,Charcoal,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#1f5c9e",
+                "baseFont": "Courier,monospace",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#1f5c9e",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#1f5c9e",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#0378ab",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#144e99",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#3381d7",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#1f5c9e",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Courier,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f90452cfa91d9ee5",
+        "type": "ui_tab",
+        "name": "Prac2",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "90d56ab1bdfa5f76",
+        "type": "ui_group",
+        "name": "Practica 2 - sensor analogico",
+        "tab": "f90452cfa91d9ee5",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a25512f40e307f04",
+        "type": "ui_tab",
+        "name": "Prac1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "459e72fb31e2625f",
+        "type": "ui_group",
+        "name": "Practica 1 - rele",
+        "tab": "a25512f40e307f04",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a39ac325084fe2d0",
+        "type": "ui_tab",
+        "name": "Prac3",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "61acd63297a8e928",
+        "type": "ui_group",
+        "name": "Practica 3 - Sensor de humedad",
+        "tab": "a39ac325084fe2d0",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3426a8dd8c4f0e88",
+        "type": "ui_tab",
+        "name": "Prac4",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bd35df1e9ce12edc",
+        "type": "ui_group",
+        "name": "Practica 4",
+        "tab": "3426a8dd8c4f0e88",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5baa01a99b6b0d7a",
+        "type": "ui_tab",
+        "name": "Prac5",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "71a706103410264e",
+        "type": "ui_group",
+        "name": "Practica 5",
+        "tab": "5baa01a99b6b0d7a",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "35e28b33f73a8aec",
+        "type": "ui_tab",
+        "name": "Todo",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bde4aa5eaf2ac01c",
+        "type": "ui_group",
+        "name": "Panel general",
+        "tab": "35e28b33f73a8aec",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95339af7056ee755",
+        "type": "ui-theme",
+        "name": "Default Theme e8f0eb",
+        "colors": {
+            "surface": "#004425",
+            "primary": "#004420",
+            "bgPage": "#dce8db",
+            "groupBg": "#f4f5f5",
+            "groupOutline": "#000000"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "f06fbb0f930f577a",
+        "type": "ui-spacer",
+        "group": "",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "95a02deab653931f",
+        "type": "ui-base",
+        "name": "Ambiental",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "c52a7041432b7da5",
+        "type": "ui-page",
+        "name": "Bombas y nivel de agua",
+        "ui": "95a02deab653931f",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "default",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 2,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "2f3cade42b4e7097",
+        "type": "ui-group",
+        "name": "Panel de monitoreo",
+        "page": "c52a7041432b7da5",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ff93d73453f0cc50",
+        "type": "ui-group",
+        "name": "Actuadores",
+        "page": "c52a7041432b7da5",
+        "width": 6,
+        "height": 1,
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "6b30c05df0a9c0b0",
+        "type": "ui-group",
+        "name": "Control",
+        "page": "c52a7041432b7da5",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "5123754293162104",
+        "type": "ui-page",
+        "name": "Registro ",
+        "ui": "95a02deab653931f",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "d6669be15a37ae9b",
+        "type": "ui-group",
+        "name": "Registro",
+        "page": "5123754293162104",
+        "width": "12",
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "8db74a9b037c65b6",
+        "type": "ui-group",
+        "name": "Control de operador",
+        "page": "5123754293162104",
+        "width": "6",
+        "height": 1,
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "2b41fee5b40ff1d6",
+        "type": "ui-page",
+        "name": "Monitoreo ambiental",
+        "ui": "95a02deab653931f",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "c8f61820c30053de",
+        "type": "ui-group",
+        "name": "Group Name",
+        "page": "2b41fee5b40ff1d6",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "580713ae997e7f72",
+        "type": "ui-page",
+        "name": "Alarma",
+        "ui": "95a02deab653931f",
+        "path": "/page5",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "default",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "8111aa583c550ee8",
+        "type": "ui-group",
+        "name": "Sistema de alarmas",
+        "page": "580713ae997e7f72",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "04e807c371555392",
+        "type": "ui-page",
+        "name": "Servo/Valvula",
+        "ui": "95a02deab653931f",
+        "path": "/page6",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "default",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 4,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "86acf395a5c1df91",
+        "type": "ui-group",
+        "name": "Valvula",
+        "page": "04e807c371555392",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "5142619f3bb3b3f6",
+        "type": "inject",
+        "z": "3a4a812410f69129",
+        "name": "Reloj",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9ad47d70f0c5b4d",
+        "type": "ui-template",
+        "z": "3a4a812410f69129",
+        "group": "d6669be15a37ae9b",
+        "page": "",
+        "ui": "",
+        "name": "Salida",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<div style=\"background: #ffffff; padding: 16px 20px; border-radius: 8px; border-left: 6px solid #006837; font-family: 'Segoe UI', Roboto, sans-serif; color: #2c3e50; box-shadow: 0 2px 8px rgba(0,0,0,0.06);\">\n    \n    <!-- Cabecera del bloque -->\n    <div style=\"display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #eef2ed; padding-bottom: 10px; margin-bottom: 12px;\">\n        <span style=\"font-size: 13px; font-weight: bold; color: #006837; letter-spacing: 0.8px;\">REGISTRO DE OPERACIÓN Y BITÁCORA</span>\n        <span style=\"font-size: 11px; background: #e8f0eb; color: #006837; padding: 4px 10px; border-radius: 4px; font-weight: bold; border: 1px solid #cce3d1;\">TOTAL REGISTROS: {{msg.payload.length || 0}}</span>\n    </div>\n\n    <!-- Contenedor con Scroll (Muestra ~6-7 filas antes de activar el scroll) -->\n    <div style=\"max-height: 260px; overflow-y: auto; padding-right: 6px;\">\n        \n        <!-- Filas del historial -->\n        <div v-for=\"(item, index) in msg.payload\" :key=\"index\" style=\"background: #f4f7f4; padding: 10px 14px; border-radius: 6px; margin-bottom: 8px; border-left: 4px solid #238c46; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; font-size: 12px; align-items: center; border-top: 1px solid #eaede9; border-right: 1px solid #eaede9; border-bottom: 1px solid #eaede9;\">\n            <div><b>Fecha/Hora:</b> <span style=\"color: #d35400;\">{{ item.timestamp }}</span></div>\n            <div><b>Operador:</b> <span style=\"color: #1b2e1e; font-weight: bold;\">{{ item.operador }}</span></div>\n            <div><b>Turno:</b> <span style=\"color: #006837; font-weight: bold;\">{{ item.turno }}</span></div>\n            <div><b>Nivel Ref:</b> <span style=\"color: #238c46; font-weight: bold;\">{{ item.nivelRef }}%</span></div>\n        </div>\n\n        <!-- Mensaje vacío -->\n        <div v-if=\"!msg.payload || msg.payload.length === 0\" style=\"text-align: center; color: #888; padding: 20px; font-size: 13px;\">\n            No hay registros guardados en la bitácora todavía. Escriba sus datos y presione Guardar.\n        </div>\n    </div>\n\n</div>",
+        "storeOutMessages": true,
+        "passthru": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 670,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4449b3e5ce455537",
+        "type": "ui-text-input",
+        "z": "3a4a812410f69129",
+        "group": "8db74a9b037c65b6",
+        "name": "Entrada_Nombre_operador",
+        "label": "Nombre",
+        "order": 1,
+        "width": "2",
+        "height": "3",
+        "topic": "Nombre",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "eac0450fcd26577f"
+            ]
+        ]
+    },
+    {
+        "id": "0903fa3c6d5f509e",
+        "type": "ui-dropdown",
+        "z": "3a4a812410f69129",
+        "group": "8db74a9b037c65b6",
+        "name": "Entrada_Turno",
+        "label": "Turno",
+        "tooltip": "",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Matutino",
+                "value": "Matutino",
+                "type": "str"
+            },
+            {
+                "label": "Vespertino",
+                "value": "Vespertino",
+                "type": "str"
+            },
+            {
+                "label": "Nocturno",
+                "value": "Nocturno",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "Turno",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 160,
+        "y": 280,
+        "wires": [
+            [
+                "c0e91e8a0125801a"
+            ]
+        ]
+    },
+    {
+        "id": "c15be1b5fce0a185",
+        "type": "ui-button",
+        "z": "3a4a812410f69129",
+        "group": "8db74a9b037c65b6",
+        "name": "Entrada_Guardar",
+        "label": "Guardar",
+        "order": 3,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "str",
+        "topic": "Guardar",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "c3b7969ad43a7fb8"
+            ]
+        ]
+    },
+    {
+        "id": "c3b7969ad43a7fb8",
+        "type": "function",
+        "z": "3a4a812410f69129",
+        "name": "Proceso_Boton_Guardar",
+        "func": "// 1. Verificamos si la orden viene explícitamente del botón reiniciar\nif (msg.topic === \"reiniciar\") {\n    // Vaciamos el historial en la memoria global\n    flow.set(\"historial_bitacora\", []);\n    \n    // Devolvemos un array vacío para que el template limpie la pantalla de inmediato\n    msg.payload = [];\n    return msg;\n}\n\n// 2. Si la orden viene del botón guardar (o cualquier otro flujo normal):\nlet historial = flow.get(\"historial_bitacora\") || [];\n\n// Leemos los valores actuales de las cajas de texto de la interfaz\nlet nombreActual = flow.get(\"ui_nombre_input\") || \"Sin registrar\";\nlet turnoActual = flow.get(\"ui_turno_input\") || \"Matutino\";\n\n// Generamos la fecha y hora exacta del registro\nlet ahora = new Date();\nlet fechaHoraFormateada = ahora.toLocaleString();\n\n// Creamos el nuevo objeto de registro\nlet nuevoRegistro = {\n    timestamp: fechaHoraFormateada,\n    operador: nombreActual,\n    turno: turnoActual,\n    lugar: \"Xalapa, Ver. (Estación Principal)\",\n    nivelRef: msg.payload.nivel_tanque_porcentaje || 0\n};\n\n// Agregamos el registro al inicio del historial\nhistorial.unshift(nuevoRegistro); \n\n// Límite de seguridad para no saturar memoria\nif (historial.length > 50) {\n    historial.pop();\n}\n\n// Guardamos el historial actualizado en la memoria global\nflow.set(\"historial_bitacora\", historial);\n\n// Enviamos el historial completo al template de la derecha\nmsg.payload = historial;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "e9ad47d70f0c5b4d"
+            ]
+        ]
+    },
+    {
+        "id": "eac0450fcd26577f",
+        "type": "function",
+        "z": "3a4a812410f69129",
+        "name": "Proceso_Nombre",
+        "func": "flow.set(\"ui_nombre_input\", msg.payload);\nreturn; ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0e91e8a0125801a",
+        "type": "function",
+        "z": "3a4a812410f69129",
+        "name": "Proceso_Turno",
+        "func": "flow.set(\"ui_turno_input\", msg.payload);\nreturn; ",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6491a985b1dbf62",
+        "type": "ui-button",
+        "z": "3a4a812410f69129",
+        "group": "8db74a9b037c65b6",
+        "name": "Entrada_Reiniciar",
+        "label": "Reiniciar bitacora",
+        "order": 4,
+        "width": "1",
+        "height": "1",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "str",
+        "topic": "Reiniciar",
+        "topicType": "msg",
+        "buttonColor": "#c0392b",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 170,
+        "y": 400,
+        "wires": [
+            [
+                "46ddd7068da6ac09"
+            ]
+        ]
+    },
+    {
+        "id": "46ddd7068da6ac09",
+        "type": "function",
+        "z": "3a4a812410f69129",
+        "name": "Proceso_Reiniciar",
+        "func": "// 1. Vaciamos por completo el historial guardado en la memoria global\nflow.set(\"historial_bitacora\", []);\n\n// 2. Limpiamos la variable temporal del nombre para que no se quede guardada la anterior\nflow.set(\"ui_nombre_input\", \"Sin registrar\");\n\n// 3. Enviamos un arreglo vacío directamente al template para que limpie la pantalla al instante\nmsg.payload = [];\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "e9ad47d70f0c5b4d"
+            ]
+        ]
+    },
+    {
+        "id": "435e7a96d19d913e",
+        "type": "http in",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_ESP32",
+        "url": "/api/sensores",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "ea06119d57ab623b",
+                "823c307d8a75f655",
+                "3abff28bfb825275",
+                "6c1d43e4c7dd5a97",
+                "2ff9d6bc32f7afae",
+                "f522ecd8fb663ad3"
+            ]
+        ]
+    },
+    {
+        "id": "ea06119d57ab623b",
+        "type": "http response",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Respuesta_ESP32",
+        "statusCode": "",
+        "headers": {},
+        "x": 340,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "823c307d8a75f655",
+        "type": "debug",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Payload",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3abff28bfb825275",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "Proceso_Lampara_Piloto",
+        "func": "let estado = msg.payload.actuadores ? msg.payload.actuadores.lampara_piloto : false;\nmsg.payload = {\n    estadoTexto: estado ? \"LÁMPARA PILOTO: ENCENDIDA\" : \"LÁMPARA PILOTO: APAGADA\",\n    colorLed: estado ? \"#ff0000\" : \"#555555\" // Rojo si prende, gris si apaga\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 180,
+        "wires": [
+            [
+                "1877169d56040cdd"
+            ]
+        ]
+    },
+    {
+        "id": "6c1d43e4c7dd5a97",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "Proceso_Bomba_Principal",
+        "func": "let estado = msg.payload.actuadores ? msg.payload.actuadores.bomba_principal : false;\n\nmsg.payload = {\n    estadoTexto: estado ? \"BOMBA PRINCIPAL: ACTIVA\" : \"BOMBA PRINCIPAL: APAGADA\",\n    colorLed: estado ? \"#00ff00\" : \"#555555\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "5368db9edf0f016c"
+            ]
+        ]
+    },
+    {
+        "id": "2ff9d6bc32f7afae",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "Proceso_Bomba_Respaldo",
+        "func": "let estado = msg.payload.actuadores ? msg.payload.actuadores.bomba_respaldo : false;\nmsg.payload = {\n    estadoTexto: estado ? \"BOMBA RESPALDO: ACTIVA\" : \"BOMBA RESPALDO: APAGADA\",\n    colorLed: estado ? \"#ffaa00\" : \"#555555\" // Naranja si prende, gris si apaga\n};\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 300,
+        "wires": [
+            [
+                "6937eda3cb0c4163"
+            ]
+        ]
+    },
+    {
+        "id": "248b2bd39c7d895d",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "PROC_Armar_Comando_Bomba_Principal",
+        "func": "msg.payload = { bomba_principal: msg.payload };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 480,
+        "wires": [
+            [
+                "f9592b4ac5dc52e5"
+            ]
+        ]
+    },
+    {
+        "id": "f9592b4ac5dc52e5",
+        "type": "http request",
+        "z": "a65381bd9f42e5c8",
+        "name": "Salida",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.167/api/control",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1030,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f522ecd8fb663ad3",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "Proceso_Nivel_Tanque",
+        "func": "let nivel = msg.payload.nivel_tanque_porcentaje || 0;\nmsg.payload = nivel;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 360,
+        "wires": [
+            [
+                "4389d0e95462d0d3"
+            ]
+        ]
+    },
+    {
+        "id": "db2dedb5ed790df5",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "PROC_Armar_Comando_Bomba_Respaldo",
+        "func": "msg.payload = { bomba_respaldo: msg.payload };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 540,
+        "wires": [
+            [
+                "f9592b4ac5dc52e5"
+            ]
+        ]
+    },
+    {
+        "id": "bed8de81d5d43df4",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "PROC_Armar_Comando_Lampara",
+        "func": "msg.payload = { lampara_piloto: msg.payload };\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 600,
+        "wires": [
+            [
+                "f9592b4ac5dc52e5"
+            ]
+        ]
+    },
+    {
+        "id": "1877169d56040cdd",
+        "type": "ui-template",
+        "z": "a65381bd9f42e5c8",
+        "group": "ff93d73453f0cc50",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Lampara piloto",
+        "order": 3,
+        "width": "6",
+        "height": "1",
+        "head": "",
+        "format": "<div style=\"background: #1e1e1e; padding: 12px; border-radius: 6px; border-left: 5px solid {{msg.payload.colorLed}}; color: white; font-family: sans-serif; font-size: 13px; font-weight: bold;\">\n    {{msg.payload.estadoTexto}}\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1060,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5368db9edf0f016c",
+        "type": "ui-template",
+        "z": "a65381bd9f42e5c8",
+        "group": "ff93d73453f0cc50",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Bomba principal",
+        "order": 2,
+        "width": "6",
+        "height": "1",
+        "head": "",
+        "format": "<div style=\"background: #1e1e1e; padding: 12px; border-radius: 6px; border-left: 5px solid {{msg.payload.colorLed}}; color: white; font-family: sans-serif; font-size: 13px; font-weight: bold;\">\n    {{msg.payload.estadoTexto}}\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1070,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6937eda3cb0c4163",
+        "type": "ui-template",
+        "z": "a65381bd9f42e5c8",
+        "group": "ff93d73453f0cc50",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Bomba de respaldo",
+        "order": 1,
+        "width": "6",
+        "height": "1",
+        "head": "",
+        "format": "<div style=\"display: flex; align-items: center; justify-content: space-between; background: #121212; padding: 12px 16px; border-radius: 6px; border-left: 5px solid {{msg.payload.colorLed}}; box-shadow: inset 0 0 8px rgba(0,0,0,0.6); margin-bottom: 8px;\">\n    <span style=\"color: #e0e0e0; font-family: 'Segoe UI', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.8px;\">\n        {{msg.payload.estadoTexto}}\n    </span>\n    <div style=\"width: 14px; height: 14px; border-radius: 50%; background-color: {{msg.payload.colorLed}}; box-shadow: 0 0 10px {{msg.payload.colorLed}}; border: 1px solid #444;\"></div>\n</div>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1080,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4389d0e95462d0d3",
+        "type": "ui-gauge",
+        "z": "a65381bd9f42e5c8",
+        "name": "Salida_Nivel del tanque",
+        "group": "2f3cade42b4e7097",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "3",
+        "height": "8",
+        "gtype": "gauge-tank",
+        "gstyle": "needle",
+        "title": "Nivel %",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#a8f5ff",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "15",
+                "color": "#55dbec",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "35",
+                "color": "#53b4fd",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "50",
+                "color": "#2397d1",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1070,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32a31067317e49b8",
+        "type": "ui-switch",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Bomba principal",
+        "label": "Bomba Principal",
+        "group": "6b30c05df0a9c0b0",
+        "order": 3,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread-swapped",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "248b2bd39c7d895d"
+            ]
+        ]
+    },
+    {
+        "id": "3585d919e9583bd1",
+        "type": "ui-switch",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Bomba 2",
+        "label": "Bomba de respaldo",
+        "group": "6b30c05df0a9c0b0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-left",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 410,
+        "y": 540,
+        "wires": [
+            [
+                "db2dedb5ed790df5"
+            ]
+        ]
+    },
+    {
+        "id": "af3cb6fe23b71b2e",
+        "type": "ui-switch",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Lampara piloto",
+        "label": "Lampara ",
+        "group": "6b30c05df0a9c0b0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread-swapped",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "bed8de81d5d43df4"
+            ]
+        ]
+    },
+    {
+        "id": "c1445e369366e706",
+        "type": "ui-gauge",
+        "z": "38125250a1f6d5d9",
+        "name": "Salida_Temperatura",
+        "group": "c8f61820c30053de",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Temperatura",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°C",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#00a300",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#f0bc00",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "85",
+                "color": "#a30a0a",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 660,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4c261b48ef68b2a",
+        "type": "ui-gauge",
+        "z": "38125250a1f6d5d9",
+        "name": "Salida_Humedad",
+        "group": "c8f61820c30053de",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "Humedad",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "80",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 650,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05b4805f6bb3bd34",
+        "type": "ui-chart",
+        "z": "38125250a1f6d5d9",
+        "group": "c8f61820c30053de",
+        "name": "Salida_Ambiental",
+        "label": "Ambiente",
+        "order": 3,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 650,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e5190561d1324b0",
+        "type": "function",
+        "z": "38125250a1f6d5d9",
+        "name": "Proceso",
+        "func": "// 1. Extraemos los valores del payload que envía el sensor DHT22\nlet temp = msg.payload.temperatura || 0;\nlet hum = msg.payload.humedad || 0;\n\n// 2. Preparamos el mensaje para la Temperatura (Salida 1)\nlet msgTemp = {\n    payload: temp,\n    topic: \"Temperatura\"\n};\n\n// 3. Preparamos el mensaje para la Humedad (Salida 2)\nlet msgHum = {\n    payload: hum,\n    topic: \"Humedad\"\n};\n\n// 4. Retornamos ambos mensajes en un array para las dos salidas del nodo\nreturn [msgTemp, msgHum];",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "c1445e369366e706",
+                "a4c261b48ef68b2a",
+                "05b4805f6bb3bd34"
+            ]
+        ]
+    },
+    {
+        "id": "59d6d06e8b8966e1",
+        "type": "inject",
+        "z": "38125250a1f6d5d9",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"temperatura\": 24.5,   \"humedad\": 60.2 }",
+        "payloadType": "json",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "5e5190561d1324b0"
+            ]
+        ]
+    },
+    {
+        "id": "5414851f90dc2c55",
+        "type": "ui-slider",
+        "z": "17571a22895ada9e",
+        "group": "86acf395a5c1df91",
+        "name": "Entrada",
+        "label": "Valvu",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "180",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "0440929579502bc0"
+            ]
+        ]
+    },
+    {
+        "id": "0440929579502bc0",
+        "type": "function",
+        "z": "17571a22895ada9e",
+        "name": "Proceso",
+        "func": "// 1. Obtenemos el ángulo que seleccionó el operador en el slider (0 a 180)\nlet angulo = msg.payload;\n\n// 2. Preparamos el mensaje en formato JSON para enviarlo a la ESP32 (por MQTT o Serial)\nmsg.payload = {\n    servo_valvula: angulo\n};\n\n// Opcional: Definimos el topic si usas MQTT\nmsg.topic = \"esp32/servo/control\";\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "56aae57953087f90",
+                "10eef35bed15b1e9"
+            ]
+        ]
+    },
+    {
+        "id": "56aae57953087f90",
+        "type": "http request",
+        "z": "17571a22895ada9e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "10eef35bed15b1e9",
+        "type": "ui-gauge",
+        "z": "17571a22895ada9e",
+        "name": "Salida",
+        "group": "86acf395a5c1df91",
+        "order": 2,
+        "value": "payload",
+        "valueType": "msg",
+        "width": "6",
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "Ángulo Actual Válvula",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "°",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "60",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "85",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": "16",
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 650,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7505f241c89f80a9",
+        "type": "inject",
+        "z": "929728b8d9d20449",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"temperatura\": 45.0,   \"nivel\": 95 }",
+        "payloadType": "json",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "8f5d8a6326ab248c"
+            ]
+        ]
+    },
+    {
+        "id": "8f5d8a6326ab248c",
+        "type": "function",
+        "z": "929728b8d9d20449",
+        "name": "Proceso",
+        "func": "// 1. Obtenemos los valores que llegan de la entrada\nlet temperatura = msg.payload.temperatura || 0;\nlet nivelTanque = msg.payload.nivel || 0;\n\nlet limiteTemperatura = 40.0; \nlet limiteNivel = 90.0;       \n\nlet textoEstado = \"🟢 Sistema Operando con Normalidad (Seguro)\";\n\n// 2. Evaluamos la condición de peligro\nif (temperatura >= limiteTemperatura || nivelTanque >= limiteNivel) {\n    textoEstado = \"🔴 ¡PELIGRO: Temperatura o Nivel Crítico Excedido!\";\n}\n\n// 3. Enviamos únicamente el texto como payload para el nodo de texto\nmsg.payload = textoEstado;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "5305701a04c2f30b"
+            ]
+        ]
+    },
+    {
+        "id": "5305701a04c2f30b",
+        "type": "ui-text",
+        "z": "929728b8d9d20449",
+        "group": "8111aa583c550ee8",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "name": "Salida",
+        "label": "Estado del Sistema",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "value": "payload",
+        "valueType": "msg",
+        "x": 630,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f7dc0d7e8e6f1b71",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "@flowfuse/node-red-dashboard": "1.33.0"
+        }
+    }
+]
