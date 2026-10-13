@@ -1,0 +1,1244 @@
+[
+    {
+        "id": "3a4a812410f69129",
+        "type": "tab",
+        "label": "Registro",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a65381bd9f42e5c8",
+        "type": "tab",
+        "label": "Practica 1 - Control de reles",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "38125250a1f6d5d9",
+        "type": "tab",
+        "label": "Practica 2 - Monitoreo ambiental",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "17571a22895ada9e",
+        "type": "tab",
+        "label": "Practica 3 - Servomotor/valvula ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "929728b8d9d20449",
+        "type": "tab",
+        "label": "Practica 4 - Sistema de alarma",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8c52c4055d2a4440",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "91863822a5cbdc8b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#8cbdc0",
+                "baseFont": "Impact,Impact,Charcoal,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#1f5c9e",
+                "baseFont": "Courier,monospace",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#1f5c9e",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#1f5c9e",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#0378ab",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#144e99",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#3381d7",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#1f5c9e",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "Courier,monospace"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "90d56ab1bdfa5f76",
+        "type": "ui_group",
+        "name": "Practica 2 - sensor analogico",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "459e72fb31e2625f",
+        "type": "ui_group",
+        "name": "Practica 1 - rele",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "61acd63297a8e928",
+        "type": "ui_group",
+        "name": "Practica 3 - Sensor de humedad",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bd35df1e9ce12edc",
+        "type": "ui_group",
+        "name": "Practica 4",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "71a706103410264e",
+        "type": "ui_group",
+        "name": "Practica 5",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bde4aa5eaf2ac01c",
+        "type": "ui_group",
+        "name": "Panel general",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95339af7056ee755",
+        "type": "ui-theme",
+        "name": "Default Theme e8f0eb",
+        "colors": {
+            "surface": "#004425",
+            "primary": "#004420",
+            "bgPage": "#dce8db",
+            "groupBg": "#f4f5f5",
+            "groupOutline": "#000000"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "f06fbb0f930f577a",
+        "type": "ui-spacer",
+        "group": "",
+        "name": "spacer",
+        "tooltip": "",
+        "order": 2,
+        "width": 1,
+        "height": 1,
+        "className": ""
+    },
+    {
+        "id": "95a02deab653931f",
+        "type": "ui-base",
+        "name": "Control de relee",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "72256ba331e2533f",
+        "type": "ui-page",
+        "name": "Registro",
+        "ui": "95a02deab653931f",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 1,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "82d3fc509e32f72f",
+        "type": "ui-group",
+        "name": "Controles",
+        "page": "72256ba331e2533f",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "9581e6fe7f61a3f9",
+        "type": "ui-group",
+        "name": "Panel de bitacora",
+        "page": "72256ba331e2533f",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "684fbbe1acfec41e",
+        "type": "ui-page",
+        "name": "Estado de tanque de agua",
+        "ui": "95a02deab653931f",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "411288db1af2e417",
+        "type": "ui-group",
+        "name": "Entradas",
+        "page": "684fbbe1acfec41e",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "592556d11e0902dd",
+        "type": "ui-group",
+        "name": "Salidas",
+        "page": "684fbbe1acfec41e",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "d2cfcb7823793668",
+        "type": "ui-page",
+        "name": "Estado de temperatura",
+        "ui": "95a02deab653931f",
+        "path": "/page3",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 3,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "99d5e03012708718",
+        "type": "ui-group",
+        "name": "Salida",
+        "page": "d2cfcb7823793668",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "7121caf4f9793e4d",
+        "type": "ui-group",
+        "name": "Entrada",
+        "page": "4e9ad1bcfde1c363",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "4e9ad1bcfde1c363",
+        "type": "ui-page",
+        "name": "Estado de valvula",
+        "ui": "95a02deab653931f",
+        "path": "/page4",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 4,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "500fa4b34b1ce3fe",
+        "type": "ui-group",
+        "name": "Salida",
+        "page": "4e9ad1bcfde1c363",
+        "width": 6,
+        "height": 1,
+        "order": 2,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "aed83ae03773810c",
+        "type": "ui-page",
+        "name": "Estado de alarma",
+        "ui": "95a02deab653931f",
+        "path": "/page5",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "95339af7056ee755",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "tabs": [],
+        "order": 5,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "4dc1fd5bb9b87bf6",
+        "type": "ui-group",
+        "name": "Salida",
+        "page": "aed83ae03773810c",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default",
+        "tab": ""
+    },
+    {
+        "id": "f5f7fe3f1d672e93",
+        "type": "ui-text-input",
+        "z": "3a4a812410f69129",
+        "group": "82d3fc509e32f72f",
+        "name": "Nombre del operador",
+        "label": "Nombre:",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "topic": "nombre",
+        "topicType": "msg",
+        "mode": "text",
+        "tooltip": "",
+        "delay": 300,
+        "passthru": true,
+        "sendOnDelay": false,
+        "sendOnBlur": true,
+        "sendOnEnter": true,
+        "className": "",
+        "clearable": false,
+        "sendOnClear": false,
+        "icon": "",
+        "iconPosition": "left",
+        "iconInnerPosition": "inside",
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "0666fec192673cff"
+            ]
+        ]
+    },
+    {
+        "id": "dbedd2c276ad1527",
+        "type": "ui-dropdown",
+        "z": "3a4a812410f69129",
+        "group": "82d3fc509e32f72f",
+        "name": "Turno",
+        "label": "Turno:",
+        "tooltip": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "chips": false,
+        "clearable": false,
+        "options": [
+            {
+                "label": "Matutino",
+                "value": "Matutino",
+                "type": "str"
+            },
+            {
+                "label": "Vespertino",
+                "value": "Vespertino",
+                "type": "str"
+            },
+            {
+                "label": "Nocturno",
+                "value": "Nocturno",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "turno",
+        "topicType": "msg",
+        "className": "",
+        "typeIsComboBox": true,
+        "msgTrigger": "onChange",
+        "x": 250,
+        "y": 300,
+        "wires": [
+            [
+                "0666fec192673cff"
+            ]
+        ]
+    },
+    {
+        "id": "ffb5f65a2595c273",
+        "type": "ui-button",
+        "z": "3a4a812410f69129",
+        "group": "82d3fc509e32f72f",
+        "name": "Boton de guardar",
+        "label": "Boton de guardar",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "click",
+        "payloadType": "str",
+        "topic": "guardar",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "0666fec192673cff"
+            ]
+        ]
+    },
+    {
+        "id": "26db4a777c0d10a5",
+        "type": "ui-button",
+        "z": "3a4a812410f69129",
+        "group": "82d3fc509e32f72f",
+        "name": "Boton de reinicio",
+        "label": "Reiniciar",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "click",
+        "payloadType": "str",
+        "topic": "reinicio",
+        "topicType": "msg",
+        "buttonColor": "",
+        "textColor": "",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 210,
+        "y": 420,
+        "wires": [
+            [
+                "0666fec192673cff"
+            ]
+        ]
+    },
+    {
+        "id": "0666fec192673cff",
+        "type": "function",
+        "z": "3a4a812410f69129",
+        "name": "Bitacora",
+        "func": "// 1. Obtenemos datos persistentes\nlet historial = flow.get(\"historial_bitacora\") || [];\nlet operarioActual = flow.get(\"operario_activo\") || \"Sin registrar\";\nlet turnoActual = flow.get(\"turno_activo\") || \"Matutino\";\n\n// Convertimos a minúsculas lo que sea que haya llegado para no fallar por mayúsculas\nlet textoPayload = String(msg.payload || \"\").toLowerCase();\nlet textoTopic = String(msg.topic || \"\").toLowerCase();\n\n// --- 2. DETECTAMOS QUÉ NODO ENVIÓ LA SEÑAL ---\n\n// Si es el botón de GUARDAR (lo detectamos por payload o topic)\nif (textoPayload.includes(\"guardar\") || textoTopic.includes(\"guardar\")) {\n    let nuevoRegistro = {\n        hora: new Date().toLocaleTimeString(),\n        fecha: new Date().toLocaleDateString(),\n        operario: operarioActual,\n        turno: turnoActual,\n        evento: \"Registro de operación manual\",\n        estado: \"OK\"\n    };\n    historial.unshift(nuevoRegistro);\n    if (historial.length > 50) historial.pop();\n    flow.set(\"historial_bitacora\", historial);\n}\n// Si es el botón de REINICIAR (Limpiamos el nombre, la tabla se queda fija)\nelse if (textoPayload.includes(\"reiniciar\") || textoTopic.includes(\"reinici\")) {\n    flow.set(\"operario_activo\", \"Sin registrar\");\n    operarioActual = \"Sin registrar\";\n}\n// Si es el campo de NOMBRE\nelse if (textoTopic.includes(\"nombre\") || msg.topic === \"Nombre del operador\") {\n    operarioActual = msg.payload;\n    flow.set(\"operario_activo\", operarioActual);\n}\n// Si es el menú de TURNO\nelse if (textoTopic.includes(\"turno\") || msg.topic === \"Turno\") {\n    turnoActual = msg.payload;\n    flow.set(\"turno_activo\", turnoActual);\n}\n\n// --- 3. ENVIAMOS LOS DATOS A LA PANTALLA ---\nmsg.payload = {\n    registros: historial\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 320,
+        "wires": [
+            [
+                "257da13a4abc604c"
+            ]
+        ]
+    },
+    {
+        "id": "257da13a4abc604c",
+        "type": "ui-template",
+        "z": "3a4a812410f69129",
+        "group": "9581e6fe7f61a3f9",
+        "page": "",
+        "ui": "",
+        "name": "Panel de bitacora",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"contenedor-libro-bitacora\">\n        <div class=\"tabla-tarjeta-grande\">\n            <div class=\"titulo-tabla\">REGISTRO DE OPERACIÓN Y BITÁCORA INDUSTRIAL</div>\n            \n            <div class=\"tabla-scroll-wrapper\">\n                <table class=\"tabla-industrial\">\n                    <thead>\n                        <tr>\n                            <th class=\"col-hora\">Hora</th>\n                            <th class=\"col-fecha\">Fecha</th>\n                            <th class=\"col-operario\">Operario</th>\n                            <th class=\"col-turno\">Turno</th>\n                            <th class=\"col-desc\">Evento / Descripción</th>\n                            <th class=\"col-estado\">Estado</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n                        <tr v-for=\"(item, index) in listaRegistros\" :key=\"index\">\n                            <td>{{ item.hora }}</td>\n                            <td>{{ item.fecha }}</td>\n                            <td>{{ item.operario }}</td>\n                            <td>{{ item.turno }}</td>\n                            <td class=\"td-desc\">{{ item.evento }}</td>\n                            <td><span class=\"badge-estado\">{{ item.estado }}</span></td>\n                        </tr>\n                        <tr v-if=\"listaRegistros.length === 0\">\n                            <td colspan=\"6\" class=\"vacio\">Bitácora fija sin registros recientes. Realice una operación para guardar datos.</td>\n                        </tr>\n                    </tbody>\n                </table>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            listaRegistros: []\n        }\n    },\n    watch: {\n        // Escuchamos el objeto 'msg' completo y de forma profunda\n        msg: {\n            deep: true,\n            immediate: true,\n            handler(nuevoMsg) {\n                if (nuevoMsg && nuevoMsg.payload && nuevoMsg.payload.registros) {\n                    this.listaRegistros = nuevoMsg.payload.registros;\n                }\n            }\n        }\n    }\n}\n</script>\n\n<style>\n.contenedor-libro-bitacora {\n    width: 100%;\n    padding: 8px;\n    box-sizing: border-box;\n}\n\n.tabla-tarjeta-grande {\n    background: #eef7f2;\n    border: 1px solid #a3e4d7;\n    border-radius: 12px;\n    padding: 24px;\n    box-shadow: 0 4px 10px rgba(0,0,0,0.03);\n    width: 100%;\n}\n\n.titulo-tabla {\n    font-size: 16px;\n    font-weight: bold;\n    color: #0e6251;\n    margin-bottom: 18px;\n    text-align: center;\n    letter-spacing: 0.8px;\n}\n\n/* Contenedor del scroll con altura perfecta para 10 filas y separación limpia */\n.tabla-scroll-wrapper {\n    max-height: 480px; \n    overflow-y: auto;\n    border-radius: 8px;\n    border: 1px solid #c8e6d8;\n    background: #ffffff;\n}\n\n.tabla-industrial {\n    width: 100%;\n    border-collapse: separate;\n    border-spacing: 0;\n    font-size: 13px;\n    text-align: left;\n}\n\n.tabla-industrial th {\n    background-color: #117a65;\n    color: white;\n    padding: 14px 16px; /* Espaciado generoso en la cabecera */\n    font-weight: 600;\n    position: sticky;\n    top: 0;\n    z-index: 2;\n    letter-spacing: 0.4px;\n}\n\n.tabla-industrial td {\n    padding: 12px 16px; /* Espaciado vertical y horizontal adecuado entre filas */\n    border-bottom: 1px solid #e8f5e9; /* Líneas divisorias muy sutiles y estéticas */\n    color: #2c3e50;\n    vertical-align: middle;\n}\n\n.tabla-industrial tbody tr:last-child td {\n    border-bottom: none; /* Elimina la línea en la última fila para mayor limpieza */\n}\n\n.tabla-industrial tbody tr:hover {\n    background-color: #f2f9f5; /* Efecto hover elegante en verde muy claro */\n}\n\n.td-desc {\n    font-weight: 500;\n}\n\n.badge-estado {\n    display: inline-block;\n    padding: 5px 10px;\n    border-radius: 6px;\n    font-size: 11px;\n    font-weight: bold;\n    background: #27ae60;\n    color: white;\n    letter-spacing: 0.5px;\n}\n\n.vacio {\n    text-align: center;\n    padding: 35px;\n    color: #7f8c8d;\n    font-style: italic;\n    font-size: 14px;\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 750,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "435e7a96d19d913e",
+        "type": "http in",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_ESP32",
+        "url": "/api/sensores",
+        "method": "post",
+        "upload": false,
+        "skipBodyParsing": false,
+        "swaggerDoc": "",
+        "x": 280,
+        "y": 260,
+        "wires": [
+            [
+                "ea06119d57ab623b",
+                "823c307d8a75f655"
+            ]
+        ]
+    },
+    {
+        "id": "ea06119d57ab623b",
+        "type": "http response",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Respuesta_ESP32",
+        "statusCode": "",
+        "headers": {},
+        "x": 240,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "823c307d8a75f655",
+        "type": "debug",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Payload",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 270,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "f9592b4ac5dc52e5",
+        "type": "http request",
+        "z": "a65381bd9f42e5c8",
+        "name": "Salida",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.167/api/control",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 790,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e408b62381e2fec0",
+        "type": "ui-switch",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Bomba",
+        "label": "Bomba Principal",
+        "group": "411288db1af2e417",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "bomba_principal",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 280,
+        "y": 380,
+        "wires": [
+            [
+                "f1071132dce1a25a"
+            ]
+        ]
+    },
+    {
+        "id": "da87e4c953fa1a8c",
+        "type": "ui-switch",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Respaldo",
+        "label": "Bomba de Respaldo",
+        "group": "411288db1af2e417",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "bomba_respaldo",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "f1071132dce1a25a"
+            ]
+        ]
+    },
+    {
+        "id": "c33e040d9a72911a",
+        "type": "ui-switch",
+        "z": "a65381bd9f42e5c8",
+        "name": "Entrada_Lampara",
+        "label": "Lampara",
+        "group": "411288db1af2e417",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": false,
+        "topic": "lampara",
+        "topicType": "msg",
+        "style": "",
+        "className": "",
+        "layout": "row-spread",
+        "clickableArea": "switch",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 270,
+        "y": 500,
+        "wires": [
+            [
+                "f1071132dce1a25a"
+            ]
+        ]
+    },
+    {
+        "id": "f1071132dce1a25a",
+        "type": "function",
+        "z": "a65381bd9f42e5c8",
+        "name": "Proceso_Relee",
+        "func": "// 1. IP de tu ESP32\nlet ipESP32 = \"192.168.1.50\"; \n\n// 2. Evaluamos qué switch mandó la señal para armar la URL del comando HTTP\nif (msg.topic === \"bomba_principal\") {\n    msg.url = \"http://\" + ipESP32 + \"/bomba1?estado=\" + (msg.payload ? 1 : 0);\n} else if (msg.topic === \"bomba_respaldo\") {\n    msg.url = \"http://\" + ipESP32 + \"/bomba2?estado=\" + (msg.payload ? 1 : 0);\n} else if (msg.topic === \"lampara\") {\n    msg.url = \"http://\" + ipESP32 + \"/lampara?estado=\" + (msg.payload ? 1 : 0);\n}\n\nmsg.method = \"GET\";\n\n// 3. Preparamos el objeto de datos (payload) para el panel visual unificado\n// (Aquí puedes combinarlo después con los datos reales que llegan de tus entradas superiores de la ESP32)\nmsg.payload = {\n    principalEncendida: msg.topic === \"bomba_principal\" ? msg.payload : false,\n    respaldoEncendido: msg.topic === \"bomba_respaldo\" ? msg.payload : false,\n    lamparaEncendida: msg.topic === \"lampara\" ? msg.payload : false,\n    fallaPrincipal: false,       // Se pondrá en true si la ESP32 detecta una falla\n    respaldoHabilitado: false,   // Cambiará a true cuando falle la principal (activa el cuadro gris)\n    nivelTanque: 50              // Valor de prueba para el medidor de nivel\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 440,
+        "wires": [
+            [
+                "f9592b4ac5dc52e5",
+                "846aabab56b2ab23"
+            ]
+        ]
+    },
+    {
+        "id": "846aabab56b2ab23",
+        "type": "ui-template",
+        "z": "a65381bd9f42e5c8",
+        "group": "592556d11e0902dd",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Panel",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"panel-scada\">\n        \n        <!-- Sección Izquierda: Medidor de Nivel del Tanque -->\n        <div class=\"seccion-nivel\">\n            <span class=\"titulo-seccion\">Nivel del Tanque</span>\n            <div class=\"barra-contenedor\">\n                <div class=\"barra-relleno\" :style=\"{ height: estados.nivelTanque + '%' }\"></div>\n                <span class=\"texto-nivel\">{{ estados.nivelTanque }}%</span>\n            </div>\n        </div>\n\n        <!-- Sección Derecha: Indicadores y Actuadores -->\n        <div class=\"seccion-actuadores\">\n            \n            <!-- Bomba Principal -->\n            <div class=\"fila-control\">\n                <span class=\"etiqueta\">Bomba Principal</span>\n                <div :class=\"['luz-led', {'encendida': estados.principalEncendida, 'falla': estados.fallaPrincipal}]\"></div>\n                <span class=\"estado\">{{ estados.fallaPrincipal ? 'FALLA' : (estados.principalEncendida ? 'ACTIVA' : 'APAGADA') }}</span>\n            </div>\n\n            <!-- Lámpara Piloto -->\n            <div class=\"fila-control\">\n                <span class=\"etiqueta\">Lámpara Piloto</span>\n                <div :class=\"['luz-led', {'encendida': estados.lamparaEncendida}]\"></div>\n                <span class=\"estado\">{{ estados.lamparaEncendida ? 'ENCENDIDA' : 'APAGADA' }}</span>\n            </div>\n\n            <!-- Bomba de Respaldo (Bloqueada en gris hasta que ocurre una falla) -->\n            <div :class=\"['bloque-respaldo', {'habilitado': estados.respaldoHabilitado}]\">\n                <div class=\"info-respaldo\">\n                    <span class=\"etiqueta\" style=\"font-weight: bold;\">Bomba de Respaldo</span>\n                    <span class=\"badge\">{{ estados.respaldoHabilitado ? 'OPERATIVA' : 'EN ESPERA' }}</span>\n                </div>\n                <div class=\"fila-control\" style=\"margin-top: 8px; background: transparent; border: none; padding: 0;\">\n                    <span class=\"etiqueta\">Estado Operativo</span>\n                    <div :class=\"['luz-led', {'encendida': estados.respaldoEncendido, 'inactivo': !estados.respaldoHabilitado}]\"></div>\n                    <span class=\"estado\">{{ estados.respaldoHabilitado ? (estados.respaldoEncendido ? 'ACTIVA' : 'EN ESPERA') : 'BLOQUEADA' }}</span>\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            estados: {\n                principalEncendida: false,\n                respaldoEncendido: false,\n                lamparaEncendida: false,\n                fallaPrincipal: false,\n                respaldoHabilitado: false,\n                nivelTanque: 0\n            }\n        }\n    },\n    watch: {\n        'msg.payload'(nuevoVal) {\n            if (nuevoVal && typeof nuevoVal === 'object') {\n                this.estados = { ...this.estados, ...nuevoVal };\n            }\n        }\n    }\n}\n</script>\n\n<style>\n    .panel-scada {\n        display: flex;\n        gap: 15px;\n        padding: 5px;\n        align-items: stretch;\n    }\n\n    .seccion-nivel {\n        flex: 1;\n        background: #eef7f2;\n        /* Fondo verde muy sutil y claro */\n        border: 1px solid #a3e4d7;\n        /* Borde verde suave */\n        border-radius: 8px;\n        padding: 10px;\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n    }\n\n    .titulo-seccion {\n        font-size: 13px;\n        font-weight: bold;\n        color: #0e6251;\n        /* Verde oscuro industrial */\n        margin-bottom: 8px;\n    }\n\n    .barra-contenedor {\n        width: 100%;\n        height: 130px;\n        background: #d4efdf;\n        /* Fondo interno del tanque en verde claro */\n        border-radius: 6px;\n        position: relative;\n        overflow: hidden;\n        border: 1px solid #76d7c4;\n        display: flex;\n        align-items: flex-end;\n        justify-content: center;\n    }\n\n    .barra-relleno {\n        width: 100%;\n        background: linear-gradient(to top, #117a65, #1abc9c);\n        /* Degradado verde agua profesional */\n        transition: height 0.4s ease;\n    }\n\n    .texto-nivel {\n        position: absolute;\n        font-weight: bold;\n        font-size: 16px;\n        color: #0b5345;\n        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.9);\n    }\n\n    .seccion-actuadores {\n        flex: 2;\n        display: flex;\n        flex-direction: column;\n        gap: 8px;\n    }\n\n    .fila-control {\n        display: flex;\n        align-items: center;\n        justify-content: space-between;\n        background: #ffffff;\n        padding: 8px 12px;\n        border-radius: 6px;\n        border: 1px solid #d0e1d4;\n        /* Bordes sutiles en tono verdoso */\n    }\n\n    .etiqueta {\n        font-size: 13px;\n        font-weight: 600;\n        color: #2c3e50;\n    }\n\n    .luz-led {\n        width: 16px;\n        height: 16px;\n        border-radius: 50%;\n        background-color: #95a5a6;\n        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);\n        transition: all 0.3s ease;\n    }\n\n    .luz-led.encendida {\n        background-color: #27ae60;\n        /* Verde brillante industrial */\n        box-shadow: 0 0 8px #27ae60;\n    }\n\n    .luz-led.falla {\n        background-color: #e74c3c;\n        /* Rojo de alerta ante fallos */\n        box-shadow: 0 0 8px #e74c3c;\n        animation: parpadeoLed 0.8s infinite alternate;\n    }\n\n    .luz-led.inactivo {\n        background-color: #d5dbdb;\n    }\n\n    .bloque-respaldo {\n        background-color: #eaf2f8;\n        /* Gris azulado/verdoso de espera */\n        border: 1px dashed #a9cce3;\n        padding: 10px;\n        border-radius: 6px;\n        transition: all 0.4s ease;\n    }\n\n    .bloque-respaldo.habilitado {\n        background-color: #e8f8f5;\n        /* Verde muy claro activo */\n        border: 1px solid #1abc9c;\n    }\n\n    .badge {\n        font-size: 10px;\n        background: #7f8c8d;\n        color: white;\n        padding: 2px 6px;\n        border-radius: 4px;\n    }\n\n    .bloque-respaldo.habilitado .badge {\n        background: #d35400;\n        /* Naranja operativo de respaldo */\n    }\n\n    .estado {\n        font-size: 12px;\n        font-weight: bold;\n        color: #555;\n        min-width: 55px;\n        text-align: right;\n    }\n\n    @keyframes parpadeoLed {\n        from {\n            opacity: 1;\n        }\n\n        to {\n            opacity: 0.3;\n        }\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 810,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5e5190561d1324b0",
+        "type": "function",
+        "z": "38125250a1f6d5d9",
+        "name": "Proceso",
+        "func": "// 1. Obtenemos temperatura y humedad (con valores por defecto si vienen vacíos)\nlet temperatura = msg.payload.temperatura || 24.0;\nlet humedad = msg.payload.humedad || 50.0;\n\n// 2. Definimos umbrales de alerta opcionales (ej: temperatura > 35°C es alerta)\nlet alertaTemp = temperatura >= 35.0;\nlet alertaHum = humedad >= 80.0;\n\n// 3. Empaquetamos los datos en un objeto limpio para el template visual\nmsg.payload = {\n    temperatura: temperatura.toFixed(1),\n    humedad: humedad.toFixed(1),\n    alertaTemp: alertaTemp,\n    alertaHum: alertaHum,\n    // Calculamos porcentajes aproximados para las barras visuales (0 a 50°C para temp, 0 a 100% para humedad)\n    porcentajeTemp: Math.min(Math.max((temperatura / 50) * 100, 0), 100),\n    porcentajeHum: Math.min(Math.max(humedad, 0), 100)\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 220,
+        "wires": [
+            [
+                "f1ddbca1acbe9308"
+            ]
+        ]
+    },
+    {
+        "id": "59d6d06e8b8966e1",
+        "type": "inject",
+        "z": "38125250a1f6d5d9",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"temperatura\": 26.5,   \"humedad\": 60.0 }",
+        "payloadType": "json",
+        "x": 140,
+        "y": 220,
+        "wires": [
+            [
+                "5e5190561d1324b0"
+            ]
+        ]
+    },
+    {
+        "id": "f1ddbca1acbe9308",
+        "type": "ui-template",
+        "z": "38125250a1f6d5d9",
+        "group": "99d5e03012708718",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Monitoreo",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"panel-ambiental\">\n\n        <!-- Tarjeta de Temperatura -->\n        <div :class=\"['tarjeta-metrica', {'alerta-activa': datos.alertaTemp}]\">\n            <div class=\"titulo\">Temperatura Ambiental</div>\n            <div class=\"valor-container\">\n                <span class=\"numero\">{{ datos.temperatura }}</span>\n                <span class=\"unidad\">°C</span>\n            </div>\n            <div class=\"barra-fondo\">\n                <div class=\"barra-progreso temp\" :style=\"{ width: datos.porcentajeTemp + '%' }\"></div>\n            </div>\n            <div class=\"estado-texto\">{{ datos.alertaTemp ? '⚠️ Temperatura Alta' : '✅ Rango Seguro' }}</div>\n        </div>\n\n        <!-- Tarjeta de Humedad -->\n        <div :class=\"['tarjeta-metrica', {'alerta-activa': datos.alertaHum}]\">\n            <div class=\"titulo\">Humedad Relativa</div>\n            <div class=\"valor-container\">\n                <span class=\"numero\">{{ datos.humedad }}</span>\n                <span class=\"unidad\">%</span>\n            </div>\n            <div class=\"barra-fondo\">\n                <div class=\"barra-progreso hum\" :style=\"{ width: datos.porcentajeHum + '%' }\"></div>\n            </div>\n            <div class=\"estado-texto\">{{ datos.alertaHum ? '⚠️ Humedad Elevada' : '✅ Rango Óptimo' }}</div>\n        </div>\n\n    </div>\n</template>\n\n<script>\n    export default {\n    data() {\n        return {\n            datos: {\n                temperatura: \"0.0\",\n                humedad: \"0.0\",\n                alertaTemp: false,\n                alertaHum: false,\n                porcentajeTemp: 0,\n                porcentajeHum: 0\n            }\n        }\n    },\n    watch: {\n        'msg.payload'(nuevoVal) {\n            if (nuevoVal && typeof nuevoVal === 'object') {\n                this.datos = { ...this.datos, ...nuevoVal };\n            }\n        }\n    }\n}\n</script>\n\n<style>\n    .panel-ambiental {\n        display: flex;\n        gap: 20px;\n        padding: 10px;\n        width: 100%;\n        justify-content: center;\n    }\n\n    .tarjeta-metrica {\n        flex: 1;\n        background: #eef7f2;\n        border: 1px solid #a3e4d7;\n        border-radius: 10px;\n        padding: 22px 18px;\n        /* Mayor espacio interno para que se vea más grande */\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        /* Centra todo horizontalmente */\n        text-align: center;\n        /* Centra los textos */\n        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);\n        transition: all 0.3s ease;\n    }\n\n    .tarjeta-metrica.alerta-activa {\n        background: #fdedec;\n        border: 1px solid #f5b7b1;\n    }\n\n    .titulo {\n        font-size: 15px;\n        /* Título un poco más grande y elegante */\n        font-weight: bold;\n        color: #0e6251;\n        margin-bottom: 12px;\n    }\n\n    .tarjeta-metrica.alerta-activa .titulo {\n        color: #c0392b;\n    }\n\n    .valor-container {\n        display: flex;\n        align-items: baseline;\n        justify-content: center;\n        gap: 6px;\n        margin-bottom: 14px;\n    }\n\n    .numero {\n        font-size: 42px;\n        /* Números principales más grandes y vistosos */\n        font-weight: bold;\n        color: #117a65;\n        line-height: 1;\n    }\n\n    .tarjeta-metrica.alerta-activa .numero {\n        color: #e74c3c;\n    }\n\n    .unidad {\n        font-size: 18px;\n        font-weight: 600;\n        color: #566573;\n    }\n\n    .barra-fondo {\n        width: 100%;\n        height: 12px;\n        /* Barra de progreso más ancha y visible */\n        background: #d4efdf;\n        border-radius: 6px;\n        overflow: hidden;\n        margin-bottom: 14px;\n    }\n\n    .tarjeta-metrica.alerta-activa .barra-fondo {\n        background: #fadbd8;\n    }\n\n    .barra-progreso {\n        height: 100%;\n        transition: width 0.4s ease;\n        border-radius: 6px;\n    }\n\n    .barra-progreso.temp {\n        background: linear-gradient(to right, #117a65, #1abc9c);\n    }\n\n    .barra-progreso.hum {\n        background: linear-gradient(to right, #2471a3, #5499c7);\n    }\n\n    .tarjeta-metrica.alerta-activa .barra-progreso {\n        background: #e74c3c !important;\n    }\n\n    .estado-texto {\n        font-size: 13px;\n        font-weight: bold;\n        color: #16a085;\n    }\n\n    .tarjeta-metrica.alerta-activa .estado-texto {\n        color: #c0392b;\n    }\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 550,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5414851f90dc2c55",
+        "type": "ui-slider",
+        "z": "17571a22895ada9e",
+        "group": "7121caf4f9793e4d",
+        "name": "Entrada",
+        "label": "paso",
+        "tooltip": "",
+        "order": 1,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "thumbLabel": "true",
+        "showTicks": "always",
+        "min": 0,
+        "max": "180",
+        "step": 1,
+        "className": "",
+        "iconPrepend": "",
+        "iconAppend": "",
+        "color": "",
+        "colorTrack": "",
+        "colorThumb": "",
+        "showTextField": false,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "0440929579502bc0"
+            ]
+        ]
+    },
+    {
+        "id": "0440929579502bc0",
+        "type": "function",
+        "z": "17571a22895ada9e",
+        "name": "Proceso",
+        "func": "// 1. IP de tu ESP32 (cámbiala por la real de tu red)\nlet ipESP32 = \"192.168.1.50\"; \n\nlet angulo = msg.payload || 0;\n\n// 2. Armamos la petición HTTP GET hacia el microcontrolador\nmsg.url = \"http://\" + ipESP32 + \"/valvula?angulo=\" + angulo;\nmsg.method = \"GET\";\n\n// 3. Preparamos el objeto de datos para el template visual centrado\nmsg.payload = {\n    angulo: angulo,\n    // Calculamos el porcentaje de apertura para la barra gráfica (0 a 180 grados)\n    porcentajeApertura: Math.min(Math.max((angulo / 180) * 100, 0), 100),\n    // Definimos el estado operativo de la válvula\n    estadoTexto: angulo === 0 ? \"CERRADA\" : (angulo >= 180 ? \"ABIERTA MÁXIMA\" : \"REGULANDO\")\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [
+                "56aae57953087f90",
+                "7e69633f357aad95"
+            ]
+        ]
+    },
+    {
+        "id": "56aae57953087f90",
+        "type": "http request",
+        "z": "17571a22895ada9e",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 670,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e69633f357aad95",
+        "type": "ui-template",
+        "z": "17571a22895ada9e",
+        "group": "500fa4b34b1ce3fe",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Valvula",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"panel-valvula-container\">\n        <div class=\"tarjeta-valvula\">\n            <div class=\"titulo\">Posición Actual de la Válvula</div>\n            \n            <div class=\"valor-container\">\n                <span class=\"numero\">{{ datos.angulo }}</span>\n                <span class=\"unidad\">°</span>\n            </div>\n\n            <div class=\"barra-fondo\">\n                <div class=\"barra-relleno\" :style=\"{ width: datos.porcentajeApertura + '%' }\"></div>\n            </div>\n\n            <div class=\"badge-estado\">{{ datos.estadoTexto }}</div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            datos: {\n                angulo: 0,\n                porcentajeApertura: 0,\n                estadoTexto: \"CERRADA\"\n            }\n        }\n    },\n    watch: {\n        'msg.payload'(nuevoVal) {\n            if (nuevoVal && typeof nuevoVal === 'object') {\n                this.datos = { ...this.datos, ...nuevoVal };\n            }\n        }\n    }\n}\n</script>\n\n<style>\n.panel-valvula-container {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    padding: 10px;\n}\n\n.tarjeta-valvula {\n    width: 100%;\n    max-width: 450px;\n    background: #eef7f2; \n    border: 1px solid #a3e4d7;\n    border-radius: 10px;\n    padding: 24px 20px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px rgba(0,0,0,0.03);\n}\n\n.titulo {\n    font-size: 16px;\n    font-weight: bold;\n    color: #0e6251; \n    margin-bottom: 14px;\n}\n\n.valor-container {\n    display: flex;\n    align-items: baseline;\n    justify-content: center;\n    gap: 4px;\n    margin-bottom: 16px;\n}\n\n.numero {\n    font-size: 48px;\n    font-weight: bold;\n    color: #117a65;\n    line-height: 1;\n}\n\n.unidad {\n    font-size: 20px;\n    font-weight: 600;\n    color: #566573;\n}\n\n.barra-fondo {\n    width: 100%;\n    height: 14px;\n    background: #d4efdf;\n    border-radius: 7px;\n    overflow: hidden;\n    margin-bottom: 16px;\n    border: 1px solid #a3e4d7;\n}\n\n.barra-relleno {\n    height: 100%;\n    background: linear-gradient(to right, #117a65, #1abc9c); \n    transition: width 0.3s ease;\n    border-radius: 7px;\n}\n\n.badge-estado {\n    background-color: #117a65;\n    color: white;\n    font-size: 12px;\n    font-weight: bold;\n    padding: 6px 14px;\n    border-radius: 20px;\n    letter-spacing: 0.5px;\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7505f241c89f80a9",
+        "type": "inject",
+        "z": "929728b8d9d20449",
+        "name": "Entrada",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{   \"temperatura\": 45.0,   \"nivel\": 95 }",
+        "payloadType": "json",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "8f5d8a6326ab248c"
+            ]
+        ]
+    },
+    {
+        "id": "8f5d8a6326ab248c",
+        "type": "function",
+        "z": "929728b8d9d20449",
+        "name": "Proceso",
+        "func": "// 1. Obtenemos los valores de temperatura o nivel\nlet temperatura = msg.payload.temperatura || 0.0;\nlet nivelTanque = msg.payload.nivel || 0;\n\nlet limiteTemperatura = 40.0; \nlet limiteNivel = 90.0;       \n\n// 2. Evaluamos la condición de peligro\nlet esPeligro = (temperatura >= limiteTemperatura || nivelTanque >= limiteNivel);\nlet textoEstado = esPeligro ? \"¡ALERTA CRÍTICA DETECTADA!\" : \"Sistema Operando con Normalidad\";\n\n// 3. Empaquetamos en un formato limpio para el template centrado\nmsg.payload = {\n    activo: esPeligro,\n    mensaje: textoEstado,\n    temperatura: temperatura.toFixed(1),\n    nivel: nivelTanque\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "6d6363183be25243"
+            ]
+        ]
+    },
+    {
+        "id": "6d6363183be25243",
+        "type": "ui-template",
+        "z": "929728b8d9d20449",
+        "group": "4dc1fd5bb9b87bf6",
+        "page": "",
+        "ui": "",
+        "name": "Salida_Alarma",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "head": "",
+        "format": "<template>\n    <div class=\"panel-alarma-container\">\n        <div :class=\"['tarjeta-alarma', {'alerta-activa': datos.activo}]\">\n            <div class=\"titulo-estado\">{{ datos.activo ? 'ESTADO DE EMERGENCIA' : 'ESTADO SEGURO' }}</div>\n            <div class=\"mensaje-alerta\">{{ datos.mensaje }}</div>\n            \n            <div class=\"detalles-container\">\n                <div class=\"detalle-item\">\n                    <span class=\"etiqueta-det\">Temperatura:</span>\n                    <span class=\"valor-det\">{{ datos.temperatura }} °C</span>\n                </div>\n                <div class=\"detalle-item\">\n                    <span class=\"etiqueta-det\">Nivel:</span>\n                    <span class=\"valor-det\">{{ datos.nivel }} %</span>\n                </div>\n            </div>\n        </div>\n    </div>\n</template>\n\n<script>\nexport default {\n    data() {\n        return {\n            datos: {\n                activo: false,\n                mensaje: \"Esperando datos del sistema...\",\n                temperatura: \"0.0\",\n                nivel: 0\n            }\n        }\n    },\n    watch: {\n        'msg.payload'(nuevoVal) {\n            if (nuevoVal && typeof nuevoVal === 'object') {\n                this.datos = { ...this.datos, ...nuevoVal };\n            }\n        }\n    }\n}\n</script>\n\n<style>\n.panel-alarma-container {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    padding: 10px;\n}\n\n.tarjeta-alarma {\n    width: 100%;\n    max-width: 500px;\n    background: #eef7f2; /* Verde industrial sutil por defecto */\n    border: 1px solid #a3e4d7;\n    border-radius: 10px;\n    padding: 26px 22px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px rgba(0,0,0,0.03);\n    transition: all 0.3s ease;\n}\n\n.tarjeta-alarma.alerta-activa {\n    background: #fdedec; /* Fondo rojo muy suave de emergencia */\n    border: 1px solid #f5b7b1;\n    animation: parpadeoFondo 0.8s infinite alternate;\n}\n\n.titulo-estado {\n    font-size: 18px;\n    font-weight: bold;\n    color: #0e6251;\n    margin-bottom: 8px;\n    letter-spacing: 0.5px;\n}\n\n.tarjeta-alarma.alerta-activa .titulo-estado {\n    color: #c0392b;\n}\n\n.mensaje-alerta {\n    font-size: 15px;\n    font-weight: 600;\n    color: #34495e;\n    margin-bottom: 20px;\n}\n\n.tarjeta-alarma.alerta-activa .mensaje-alerta {\n    color: #922b21;\n}\n\n.detalles-container {\n    display: flex;\n    gap: 24px;\n    background: rgba(255, 255, 255, 0.75);\n    padding: 12px 24px;\n    border-radius: 8px;\n    border: 1px solid rgba(0,0,0,0.05);\n}\n\n.detalle-item {\n    display: flex;\n    gap: 6px;\n    align-items: baseline;\n}\n\n.etiqueta-det {\n    font-size: 13px;\n    font-weight: bold;\n    color: #566573;\n}\n\n.valor-det {\n    font-size: 14px;\n    font-weight: bold;\n    color: #117a65;\n}\n\n.tarjeta-alarma.alerta-activa .valor-det {\n    color: #e74c3c;\n}\n\n@keyframes parpadeoFondo {\n    0% { background-color: #fdedec; opacity: 1; }\n    100% { background-color: #fadbd8; opacity: 0.85; }\n}\n</style>",
+        "storeOutMessages": true,
+        "passthru": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 560,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65bc72bd5eaa4f31",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "@flowfuse/node-red-dashboard": "1.33.0"
+        }
+    }
+]
